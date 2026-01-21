@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "serve:web": "nx serve web",
-    "serve:api": "nx serve api"
+    "serve:api": "nx serve apps/api",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\""
   },
   "private": true,
   "dependencies": {
