@@ -6,7 +6,7 @@ import { ContentDto } from '@libs/dto';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('content')
   getData(@Query('path') path: string): ContentDto {
     return this.appService.getContent(path);
   }
